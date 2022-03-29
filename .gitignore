@@ -19,6 +19,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # environment files
+.env
 .env.*
 
 # IntelliJ IDEA settings folder

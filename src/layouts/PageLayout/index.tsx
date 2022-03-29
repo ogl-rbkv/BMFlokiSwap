@@ -6,7 +6,7 @@ interface IProps {
 	children: JSX.Element;
 }
 
-export const PageLayout = ({ children }: IProps) => {
+export const PageLayout = ({ children }: IProps): JSX.Element => {
 	return (
 		<Box height={'100vh'} display={'flex'} flexDirection={'column'}>
 			<Header />

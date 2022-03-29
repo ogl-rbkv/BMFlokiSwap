@@ -4,17 +4,13 @@ import { ThemeProvider } from '@mui/material/styles';
 import { CustomTheme } from 'constants/CustomTheme';
 import { PageLayout } from 'layouts/PageLayout';
 
-export const App = () => {
+export const App = (): JSX.Element => {
 	return (
 		<ThemeProvider theme={CustomTheme}>
 			<Router>
 				<Routes>
 					{AppRoutes.map((route) => (
-						<Route
-							key={route.path}
-							path={route.path}
-							element={<PageLayout>{route.page()}</PageLayout>}
-						/>
+						<Route key={route.path} path={route.path} element={<PageLayout>{route.page()}</PageLayout>} />
 					))}
 				</Routes>
 			</Router>
