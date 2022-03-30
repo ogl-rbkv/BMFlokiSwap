@@ -2,7 +2,7 @@ import { Box, Link, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import { Paths } from 'routes/paths';
 
-export const Header = () => {
+export const Header = (): JSX.Element => {
 	return (
 		<Box display="flex" flexDirection="row" alignItems={'center'} marginX={3}>
 			<Typography variant={'h3'}>Header</Typography>
